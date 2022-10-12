@@ -1,0 +1,56 @@
+<body>
+  <header>
+    <h1>Formulario</h1>
+  </header>
+  <div class=" form">
+  
+    <form class="dentro" [formGroup] = "form" (ngSubmit)="save($event)">
+        
+      <div class="group">      
+        <input type="text" required formControlName="name">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Name</label>
+      </div>
+      <div class="group">      
+        <input type="date" required formControlName="date">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        
+      </div>
+        
+      <div class="group">      
+        <input type="email" required formControlName="email">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Email</label>
+      </div>
+
+      <div class="group">      
+        <input type="text" required formControlName="text">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Mensaje</label>
+      </div>
+      <p>
+        Category: <br/>
+        <select formControlName="category">
+          <option value="1">Category 1</option>
+          <option value="2">Category 2</option>
+          <option value="3">Category 3</option>
+        </select>
+      </p>
+      <p>
+        Genero: <br/>
+        <input type="radio" name="gender" formControlName="gender" value="male"> Male<br>
+        <input type="radio" name="gender" formControlName="gender" value="female"> Female<br>
+        <input type="radio" name="gender" formControlName="gender" value="other"> Other
+      </p>
+
+      <button mat-raised-button color="accent">Guardar</button>
+      
+    </form>
+  </div>
+</body>
+
+

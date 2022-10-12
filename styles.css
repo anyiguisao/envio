@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    width: 100%;
+    background-color: #ffdd90;
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2016/09/wallpaper-rosa-pastel-vintage-gratis.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
